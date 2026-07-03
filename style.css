@@ -244,8 +244,7 @@ padding:16px 28px;
 }
 
 .logo{
-    width: 180px;
-    max-width: 100%;
+    width: clamp(160px, 18vw, 260px);
     height: auto;
     display: block;
     margin: 0 auto 20px;
