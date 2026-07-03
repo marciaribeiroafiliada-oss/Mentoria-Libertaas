@@ -1,32 +1,20 @@
-// =========================
-// ROLAGEM SUAVE
-// =========================
+// Rolagem suave para links internos
 document.querySelectorAll('a[href^="#"]').forEach(link => {
-
     link.addEventListener("click", function(e){
-
         e.preventDefault();
 
         const destino = document.querySelector(this.getAttribute("href"));
 
         if(destino){
-
             destino.scrollIntoView({
-
                 behavior:"smooth"
-
             });
-
         }
-
     });
-
 });
 
-
-// =========================
-// ANIMAÇÃO AO ROLAR
-// =========================
+// Animação de entrada dos elementos
+const elementos = document.querySelectorAll(".card, .sobre, .cta, .video");
 
 const observer = new IntersectionObserver((entries)=>{
 
@@ -34,7 +22,8 @@ const observer = new IntersectionObserver((entries)=>{
 
         if(entry.isIntersecting){
 
-            entry.target.classList.add("mostrar");
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0px)";
 
         }
 
@@ -44,105 +33,29 @@ const observer = new IntersectionObserver((entries)=>{
     threshold:0.2
 });
 
-document.querySelectorAll("section").forEach(sec=>{
+elementos.forEach(el=>{
 
-    sec.classList.add("esconder");
+    el.style.opacity="0";
+    el.style.transform="translateY(40px)";
+    el.style.transition="all .8s ease";
 
-    observer.observe(sec);
+    observer.observe(el);
 
 });
 
-
-// =========================
-// BOTÕES PULSANDO
-// =========================
-
-const botoes = document.querySelectorAll(".btn");
+// Botão pulsando
+const botoes = document.querySelectorAll(".botao,.botao2,.botao3");
 
 setInterval(()=>{
 
-    botoes.forEach(btn=>{
+    botoes.forEach(botao=>{
 
-        btn.style.transform="scale(1.05)";
+        botao.style.transform="scale(1.03)";
 
         setTimeout(()=>{
-
-            btn.style.transform="scale(1)";
-
-        },350);
+            botao.style.transform="scale(1)";
+        },400);
 
     });
 
 },3000);
-
-
-// =========================
-// PIXEL FACEBOOK
-// CLIQUE NO BOTÃO
-// =========================
-
-document.querySelectorAll(".btn").forEach(botao=>{
-
-    botao.addEventListener("click",()=>{
-
-        if(typeof fbq !== "undefined"){
-
-            fbq('track','Lead');
-
-        }
-
-    });
-
-});
-
-
-// =========================
-// BOTÃO VOLTA AO TOPO
-// =========================
-
-const voltarTopo=document.createElement("button");
-
-voltarTopo.innerHTML="↑";
-
-voltarTopo.style.position="fixed";
-voltarTopo.style.right="20px";
-voltarTopo.style.bottom="20px";
-voltarTopo.style.width="50px";
-voltarTopo.style.height="50px";
-voltarTopo.style.borderRadius="50%";
-voltarTopo.style.border="none";
-voltarTopo.style.background="#C78572";
-voltarTopo.style.color="#fff";
-voltarTopo.style.fontSize="22px";
-voltarTopo.style.cursor="pointer";
-voltarTopo.style.display="none";
-voltarTopo.style.boxShadow="0 5px 15px rgba(0,0,0,.2)";
-voltarTopo.style.zIndex="999";
-
-document.body.appendChild(voltarTopo);
-
-window.addEventListener("scroll",()=>{
-
-    if(window.scrollY>400){
-
-        voltarTopo.style.display="block";
-
-    }else{
-
-        voltarTopo.style.display="none";
-
-    }
-
-});
-
-voltarTopo.addEventListener("click",()=>{
-
-    window.scrollTo({
-
-        top:0,
-
-        behavior:"smooth"
-
-    });
-
-});
