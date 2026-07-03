@@ -243,12 +243,6 @@ padding:16px 28px;
     text-align: center;
 }
 
-.logo{
-    width: clamp(160px, 18vw, 260px);
-    height: auto;
-    display: block;
-    margin: 0 auto 20px;
-}
 img.logo{
     width: 260px !important;
     max-width: none !important;
