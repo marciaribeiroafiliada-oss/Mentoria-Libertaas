@@ -78,13 +78,13 @@ body{
     font-size:20px;
     font-weight:bold;
     transition:.3s;
-    box-shadow:0 10px 25px rgba(0,0,0,.15);
+    box-shadow:0 12px 30px rgba(24,199,90,.35);
 }
 
 .botao:hover,
 .botao2:hover,
 .botao3:hover{
-    background:#a86c46;
+    background:#11a847;;
     transform:translateY(-3px);
 }
 
