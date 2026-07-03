@@ -17,33 +17,43 @@ body{
 
 /* HERO PRINCIPAL */
 .hero{
-    background:linear-gradient(rgba(255,248,245,.85),rgba(255,248,245,.85)),
+    background:linear-gradient(rgba(255,248,245,.90),rgba(255,248,245,.90)),
     url('https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1600&q=80');
     background-size:cover;
     background-position:center;
     min-height:100vh;
 
     display:flex;
+    flex-direction:column;
     justify-content:center;
     align-items:center;
+
     text-align:center;
-    padding:40px;
+
+    padding:70px 20px;
 }
 
 /* CONTEÚDO CENTRAL */
 .conteudo{
     width:100%;
-    max-width:900px;
+    max-width:1000px;
+    margin:auto;
     text-align:center;
 }
 
 /* LOGO GRANDE E RESPONSIVA */
 .logo{
-    width:420px;
-    max-width:85vw;
-    height:auto;
+
     display:block;
-    margin:0 auto 25px auto;
+
+    width:340px;
+
+    max-width:90%;
+
+    margin:0 auto 40px auto;
+
+    height:auto;
+
 }
 
 /* TÍTULO */
