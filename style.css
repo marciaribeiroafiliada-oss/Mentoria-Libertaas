@@ -251,10 +251,10 @@ padding:16px 28px;
     text-align:center;
 }
 
-.logo{
-    width:420px !important;
-    max-width:80vw !important;
-    height:auto !important;
-    display:block;
-    margin:0 auto 25px;
+img.logo{
+    width: 500px !important;
+    max-width: none !important;
+    height: auto !important;
+    display: block !important;
+    margin: 0 auto 25px !important;
 }
