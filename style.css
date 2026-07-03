@@ -15,12 +15,14 @@ body{
     line-height:1.7;
 }
 
+/* HERO PRINCIPAL */
 .hero{
     background:linear-gradient(rgba(255,248,245,.85),rgba(255,248,245,.85)),
     url('https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1600&q=80');
     background-size:cover;
     background-position:center;
     min-height:100vh;
+
     display:flex;
     justify-content:center;
     align-items:center;
@@ -28,10 +30,23 @@ body{
     padding:40px;
 }
 
+/* CONTEÚDO CENTRAL */
 .conteudo{
-    max-width:850px;
+    width:100%;
+    max-width:900px;
+    text-align:center;
 }
 
+/* LOGO GRANDE E RESPONSIVA */
+.logo{
+    width:420px;
+    max-width:85vw;
+    height:auto;
+    display:block;
+    margin:0 auto 25px auto;
+}
+
+/* TÍTULO */
 .hero h1{
     font-size:52px;
     color:#7b4e43;
@@ -39,12 +54,14 @@ body{
     line-height:1.2;
 }
 
+/* SUBTÍTULO */
 .subtitulo{
     font-size:24px;
     margin-bottom:40px;
     color:#6b5a55;
 }
 
+/* BOTÕES */
 .botao,
 .botao2,
 .botao3{
@@ -67,6 +84,7 @@ body{
     transform:translateY(-3px);
 }
 
+/* VÍDEO */
 .video{
     max-width:1000px;
     margin:auto;
@@ -97,6 +115,7 @@ body{
     top:0;
 }
 
+/* TEXTO */
 .texto{
     margin:40px auto;
     max-width:850px;
@@ -104,6 +123,7 @@ body{
     color:#555;
 }
 
+/* BENEFÍCIOS */
 .beneficios{
     background:#fdf2ec;
     padding:80px 30px;
@@ -141,6 +161,7 @@ body{
     color:#7b4e43;
 }
 
+/* SOBRE */
 .sobre{
     padding:90px 25px;
     max-width:900px;
@@ -158,6 +179,7 @@ body{
     font-size:22px;
 }
 
+/* CTA FINAL */
 .cta{
     background:#7b4e43;
     color:white;
@@ -179,6 +201,7 @@ body{
     background:#f4e7dd;
 }
 
+/* FOOTER */
 footer{
     background:#3f302c;
     color:white;
@@ -186,78 +209,49 @@ footer{
     padding:25px;
 }
 
+/* RESPONSIVO */
 @media(max-width:768px){
 
 .hero{
-padding:30px 20px;
+    padding:30px 20px;
 }
 
 .hero h1{
-font-size:36px;
+    font-size:36px;
 }
 
 .subtitulo{
-font-size:20px;
+    font-size:20px;
 }
 
 .video h2{
-font-size:30px;
+    font-size:30px;
 }
 
 .texto{
-font-size:19px;
+    font-size:19px;
 }
 
 .sobre h2{
-font-size:32px;
+    font-size:32px;
 }
 
 .sobre p{
-font-size:19px;
+    font-size:19px;
 }
 
 .cta h2{
-font-size:30px;
+    font-size:30px;
 }
 
 .botao,
 .botao2,
 .botao3{
-font-size:18px;
-padding:16px 28px;
+    font-size:18px;
+    padding:16px 28px;
 }
 
+.logo{
+    width:260px;
 }
-.hero{
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-}
-
-.conteudo {
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.hero{
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-}
-
-img.logo{
-    width: 500px !important;
-    max-width: none !important;
-    height: auto !important;
-    display: block !important;
-    margin: 0 auto 25px !important;
-}
-.hero{
-    width: 100%;
 }
