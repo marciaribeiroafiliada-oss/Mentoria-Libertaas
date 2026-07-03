@@ -254,4 +254,62 @@ footer{
     font-size:18px;
     padding:16px 28px;
 }
+/* ===========================
+   SLOGAN LIBERTAAS
+=========================== */
 
+.slogan{
+
+background:linear-gradient(180deg,#fffaf7,#fff3ec);
+
+padding:100px 30px;
+
+text-align:center;
+
+}
+
+.slogan h2{
+
+font-size:52px;
+
+font-family:Georgia, "Times New Roman", serif;
+
+font-weight:normal;
+
+color:#7b4e43;
+
+margin:18px 0;
+
+letter-spacing:1px;
+
+}
+
+.slogan p{
+
+margin-top:35px;
+
+font-size:24px;
+
+color:#b97d68;
+
+font-weight:bold;
+
+letter-spacing:3px;
+
+text-transform:uppercase;
+
+}
+
+.linha{
+
+width:120px;
+
+height:2px;
+
+background:#d6b19c;
+
+margin:25px auto;
+
+border-radius:10px;
+
+}
