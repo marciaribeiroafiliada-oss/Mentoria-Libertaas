@@ -258,3 +258,6 @@ img.logo{
     display: block !important;
     margin: 0 auto 25px !important;
 }
+.hero{
+    width: 100%;
+}
