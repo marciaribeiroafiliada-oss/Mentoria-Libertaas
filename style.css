@@ -1,93 +1,139 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:Arial, Helvetica, sans-serif;
-    background:#fffaf7;
-    color:#4a3d39;
-    line-height:1.6;
-    overflow-x:hidden;
-}
-
-/* CONTAINER PADRÃO */
-.container{
-    max-width:1000px;
-    margin:auto;
-    padding:0 20px;
-    text-align:center;
-}
-
-/* HERO */
-.hero{
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:60px 20px;
-    background:linear-gradient(rgba(255,248,245,.92),rgba(255,248,245,.92)),
-    url('https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1600&q=80');
-    background-size:cover;
-    background-position:center;
-}
-
-.logo{
-    width:260px;
-    margin-bottom:20px;
-}
-
-.hero h1{
-    font-size:42px;
-    color:#7b4e43;
-    margin-bottom:15px;
-}
-
-.subtitulo{
-    font-size:20px;
-    color:#6b5a55;
-    margin-bottom:25px;
-}
-
-/* BOTÕES */
-.botao,
-.botao2,
-.botao3{
-    display:inline-block;
-    background:#18c75a;
-    color:#fff;
-    padding:14px 32px;
-    margin:10px auto;
-    border-radius:50px;
-    text-decoration:none;
-    font-size:16px;
-    font-weight:bold;
-    box-shadow:0 8px 20px rgba(24,199,90,.25);
-    transition:.3s;
-}
-
-.botao:hover,
-.botao2:hover,
-.botao3:hover{
-    background:#0fa64a;
-    transform:translateY(-3px);
-}
-
 /* VIDEO */
 .video{
+    max-width:1000px;
+    margin:auto;
     padding:80px 20px;
     text-align:center;
 }
 
 .video h2{
-    font-size:32px;
-    margin-bottom:20px;
+    font-size:36px;
+    margin-bottom:30px;
+    color:#7b4e43;
 }
 
 .video-container{
     position:relative;
     padding-bottom:56.25%;
     height:0;
-    overflow
+    overflow:hidden;
+    border-radius:18px;
+}
+
+.video-container iframe{
+    position:absolute;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+}
+
+/* INTRODUÇÃO */
+.introducao{
+    max-width:900px;
+    margin:80px auto;
+    padding:0 20px;
+    text-align:center;
+}
+
+.introducao h2{
+    font-size:38px;
+    color:#7b4e43;
+    margin-bottom:30px;
+}
+
+.texto-intro{
+    font-size:20px;
+    line-height:2;
+    margin-bottom:20px;
+    color:#5a514d;
+}
+
+.espaco-botao{
+    margin-top:40px;
+}
+
+/* CARDS */
+.programa,
+.beneficios{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.cards{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:#fff;
+    width:260px;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+/* SLOGAN */
+.slogan{
+    text-align:center;
+    padding:90px 20px;
+    background:#fff3ec;
+}
+
+.slogan h2{
+    font-size:46px;
+    color:#7b4e43;
+    margin:10px 0;
+    font-weight:normal;
+}
+
+.slogan p{
+    margin-top:20px;
+    font-weight:bold;
+    color:#b97d68;
+    letter-spacing:3px;
+}
+
+/* CTA */
+.cta{
+    background:#7b4e43;
+    color:#fff;
+    text-align:center;
+    padding:90px 20px;
+}
+
+.cta h2{
+    font-size:38px;
+    margin-bottom:20px;
+}
+
+/* FOOTER */
+footer{
+    background:#3f302c;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+}
+
+/* RESPONSIVO */
+@media(max-width:768px){
+
+.hero h1{
+    font-size:32px;
+}
+
+.subtitulo{
+    font-size:18px;
+}
+
+.slogan h2{
+    font-size:28px;
+}
+
+.cards{
+    flex-direction:column;
+    align-items:center;
+}
+}
