@@ -1,14 +1,100 @@
-/* VIDEO */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#fffaf7;
+    color:#4a3d39;
+    line-height:1.7;
+}
+
+/* HERO PRINCIPAL */
+.hero{
+    background:linear-gradient(rgba(255,248,245,.85),rgba(255,248,245,.85)),
+    url('https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1600&q=80');
+    background-size:cover;
+    background-position:center;
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px;
+}
+
+/* CONTEÚDO CENTRAL */
+.conteudo{
+    width:100%;
+    max-width:900px;
+    text-align:center;
+}
+
+/* LOGO GRANDE E RESPONSIVA */
+.logo{
+    width:420px;
+    max-width:85vw;
+    height:auto;
+    display:block;
+    margin:0 auto 25px auto;
+}
+
+/* TÍTULO */
+.hero h1{
+    font-size:52px;
+    color:#7b4e43;
+    margin-bottom:25px;
+    line-height:1.2;
+}
+
+/* SUBTÍTULO */
+.subtitulo{
+    font-size:24px;
+    margin-bottom:40px;
+    color:#6b5a55;
+}
+
+/* BOTÕES */
+.botao,
+.botao2,
+.botao3{
+    display:inline-block;
+    background:#c58b63;
+    color:white;
+    padding:18px 45px;
+    text-decoration:none;
+    border-radius:50px;
+    font-size:20px;
+    font-weight:bold;
+    transition:.3s;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.botao:hover,
+.botao2:hover,
+.botao3:hover{
+    background:#a86c46;
+    transform:translateY(-3px);
+}
+
+/* VÍDEO */
 .video{
     max-width:1000px;
     margin:auto;
-    padding:80px 20px;
+    padding:80px 25px;
     text-align:center;
 }
 
 .video h2{
-    font-size:36px;
-    margin-bottom:30px;
+    font-size:40px;
+    margin-bottom:35px;
     color:#7b4e43;
 }
 
@@ -17,7 +103,8 @@
     padding-bottom:56.25%;
     height:0;
     overflow:hidden;
-    border-radius:18px;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
 }
 
 .video-container iframe{
@@ -28,112 +115,143 @@
     top:0;
 }
 
-/* INTRODUÇÃO */
-.introducao{
-    max-width:900px;
-    margin:80px auto;
-    padding:0 20px;
-    text-align:center;
+/* TEXTO */
+.texto{
+    margin:40px auto;
+    max-width:850px;
+    font-size:22px;
+    color:#555;
 }
 
-.introducao h2{
-    font-size:38px;
-    color:#7b4e43;
-    margin-bottom:30px;
-}
-
-.texto-intro{
-    font-size:20px;
-    line-height:2;
-    margin-bottom:20px;
-    color:#5a514d;
-}
-
-.espaco-botao{
-    margin-top:40px;
-}
-
-/* CARDS */
-.programa,
+/* BENEFÍCIOS */
 .beneficios{
-    padding:80px 20px;
+    background:#fdf2ec;
+    padding:80px 30px;
     text-align:center;
+}
+
+.beneficios h2{
+    font-size:42px;
+    color:#7b4e43;
+    margin-bottom:50px;
 }
 
 .cards{
     display:flex;
-    gap:20px;
     justify-content:center;
+    gap:30px;
     flex-wrap:wrap;
 }
 
 .card{
-    background:#fff;
-    width:260px;
-    padding:25px;
-    border-radius:15px;
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    background:white;
+    width:300px;
+    padding:35px;
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.3s;
 }
 
-/* SLOGAN */
-.slogan{
-    text-align:center;
-    padding:90px 20px;
-    background:#fff3ec;
+.card:hover{
+    transform:translateY(-10px);
 }
 
-.slogan h2{
-    font-size:46px;
+.card h3{
+    margin:20px 0;
     color:#7b4e43;
-    margin:10px 0;
-    font-weight:normal;
 }
 
-.slogan p{
-    margin-top:20px;
-    font-weight:bold;
-    color:#b97d68;
-    letter-spacing:3px;
+/* SOBRE */
+.sobre{
+    padding:90px 25px;
+    max-width:900px;
+    margin:auto;
+    text-align:center;
 }
 
-/* CTA */
+.sobre h2{
+    font-size:42px;
+    margin-bottom:30px;
+    color:#7b4e43;
+}
+
+.sobre p{
+    font-size:22px;
+}
+
+/* CTA FINAL */
 .cta{
     background:#7b4e43;
-    color:#fff;
+    color:white;
     text-align:center;
-    padding:90px 20px;
+    padding:90px 25px;
 }
 
 .cta h2{
-    font-size:38px;
-    margin-bottom:20px;
+    font-size:42px;
+    margin-bottom:35px;
+}
+
+.botao3{
+    background:#ffffff;
+    color:#7b4e43;
+}
+
+.botao3:hover{
+    background:#f4e7dd;
 }
 
 /* FOOTER */
 footer{
     background:#3f302c;
-    color:#fff;
+    color:white;
     text-align:center;
-    padding:20px;
+    padding:25px;
 }
 
 /* RESPONSIVO */
 @media(max-width:768px){
 
+.hero{
+    padding:30px 20px;
+}
+
 .hero h1{
-    font-size:32px;
+    font-size:36px;
 }
 
 .subtitulo{
+    font-size:20px;
+}
+
+.video h2{
+    font-size:30px;
+}
+
+.texto{
+    font-size:19px;
+}
+
+.sobre h2{
+    font-size:32px;
+}
+
+.sobre p{
+    font-size:19px;
+}
+
+.cta h2{
+    font-size:30px;
+}
+
+.botao,
+.botao2,
+.botao3{
     font-size:18px;
+    padding:16px 28px;
 }
 
-.slogan h2{
-    font-size:28px;
-}
-
-.cards{
-    flex-direction:column;
-    align-items:center;
+.logo{
+    width:260px;
 }
 }
