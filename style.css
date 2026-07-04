@@ -5,7 +5,15 @@
 }
 
 body{
-    .conteudo,
+    font-family:Arial, Helvetica, sans-serif;
+    background:#fffaf7;
+    color:#4a3d39;
+    line-height:1.6;
+    overflow-x:hidden;
+}
+
+/* CENTRALIZAÇÃO GERAL */
+.conteudo,
 .video,
 .introducao,
 .programa,
@@ -15,13 +23,8 @@ body{
 .sobre{
     max-width:1100px;
     margin:auto;
-    padding-left:20px;
-    padding-right:20px;
-}
-    font-family:Arial, Helvetica, sans-serif;
-    background:#fffaf7;
-    color:#4a3d39;
-    line-height:1.7;
+    padding:60px 20px;
+    text-align:center;
 }
 
 /* HERO */
@@ -38,34 +41,28 @@ body{
     background-position:center;
 }
 
-.conteudo{
-    max-width:1000px;
-}
-
 .logo{
     width:260px;
     margin-bottom:20px;
 }
 
 .hero h1{
-    font-size:48px;
+    font-size:42px;
     color:#7b4e43;
     margin-bottom:20px;
-    line-height:1.2;
 }
 
 .subtitulo{
-    font-size:22px;
-    margin-bottom:30px;
+    font-size:20px;
     color:#6b5a55;
+    margin-bottom:30px;
 }
 
 /* BOTÕES */
 .botao,
 .botao2,
 .botao3{
-    display:block;
-    width:fit-content;
+    display:inline-block;
     background:#18c75a;
     color:#fff;
     padding:14px 32px;
@@ -81,6 +78,108 @@ body{
 .botao:hover,
 .botao2:hover,
 .botao3:hover{
-    background:#11a847;
+    background:#0fa64a;
     transform:translateY(-3px);
+    box-shadow:0 12px 25px rgba(24,199,90,.35);
+}
+
+/* VIDEO */
+.video h2{
+    font-size:32px;
+    margin-bottom:20px;
+}
+
+.video-container{
+    position:relative;
+    padding-bottom:56.25%;
+    height:0;
+    overflow:hidden;
+    border-radius:15px;
+}
+
+.video-container iframe{
+    position:absolute;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+}
+
+/* INTRODUÇÃO */
+.introducao h2{
+    font-size:34px;
+    margin-bottom:20px;
+}
+
+.texto-intro{
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:15px;
+}
+
+/* CARDS */
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:#fff;
+    width:250px;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+/* SLOGAN */
+.slogan{
+    background:#fff3ec;
+}
+
+.slogan h2{
+    font-size:42px;
+    color:#7b4e43;
+    margin:10px 0;
+}
+
+.slogan p{
+    margin-top:20px;
+    font-weight:bold;
+    color:#b97d68;
+}
+
+/* CTA */
+.cta{
+    background:#7b4e43;
+    color:#fff;
+}
+
+.cta h2{
+    font-size:34px;
+}
+
+/* FOOTER */
+footer{
+    background:#3f302c;
+    color:#fff;
+    padding:20px;
+}
+
+/* RESPONSIVO */
+@media(max-width:768px){
+
+.hero h1{
+    font-size:28px;
+}
+
+.cards{
+    flex-direction:column;
+    align-items:center;
+}
+
+.slogan h2{
+    font-size:26px;
+}
 }
