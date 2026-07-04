@@ -64,16 +64,17 @@ body{
 .botao,
 .botao2,
 .botao3{
-    display:inline-block;
+    display:block;
+    width:fit-content;
     background:#18c75a;
     color:#fff;
-    padding:16px 40px;
-    margin:10px;
+    padding:14px 32px;
+    margin:10px auto;
     border-radius:50px;
     text-decoration:none;
-    font-size:18px;
+    font-size:16px;
     font-weight:bold;
-    box-shadow:0 10px 25px rgba(24,199,90,.25);
+    box-shadow:0 8px 20px rgba(24,199,90,.25);
     transition:.3s;
 }
 
