@@ -1,3 +1,7 @@
+/* ===========================
+   RESET
+=========================== */
+
 *{
     margin:0;
     padding:0;
@@ -13,247 +17,522 @@ body{
     background:#fffaf7;
     color:#4a3d39;
     line-height:1.7;
-    text-align:center;
 }
 
-/* CENTRALIZAÇÃO GLOBAL */
-section{
-    width:100%;
-    display:flex;
-    justify-content:center;
-}
+/* ===========================
+   CONTAINER
+=========================== */
 
-/* CONTAINER PADRÃO (resolve tudo desalinhado) */
-.conteudo,
-.video,
-.texto,
-.sobre,
-.cards{
-    width:100%;
-    max-width:1000px;
+.conteudo{
+    width:90%;
+    max-width:1100px;
     margin:0 auto;
     text-align:center;
 }
 
-/* HERO */
+/* ===========================
+   HERO
+=========================== */
+
 .hero{
-    background:linear-gradient(rgba(255,248,245,.85),rgba(255,248,245,.85)),
-    url('https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1600&q=80');
+    background:
+    linear-gradient(rgba(255,248,245,.88),rgba(255,248,245,.88)),
+    url("https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1600&q=80");
+
     background-size:cover;
     background-position:center;
+
     min-height:100vh;
 
     display:flex;
-    justify-content:center;
     align-items:center;
-    padding:40px;
+    justify-content:center;
+
+    padding:60px 20px;
 }
 
-/* LOGO */
 .logo{
     width:420px;
-    max-width:85vw;
-    height:auto;
+    max-width:90%;
     display:block;
-    margin:0 auto 25px;
+    margin:0 auto 30px;
 }
 
-/* TÍTULO */
 .hero h1{
     font-size:52px;
     color:#7b4e43;
-    margin-bottom:25px;
     line-height:1.2;
+    margin-bottom:25px;
 }
 
-/* SUBTÍTULO */
 .subtitulo{
     font-size:24px;
-    margin-bottom:40px;
     color:#6b5a55;
+    max-width:800px;
+    margin:0 auto 40px;
 }
 
-/* BOTÕES */
+/* ===========================
+   BOTÕES
+=========================== */
+
 .botao,
 .botao2,
 .botao3{
+
     display:inline-block;
+
     background:#c58b63;
-    color:white;
-    padding:18px 45px;
+
+    color:#fff;
+
     text-decoration:none;
+
+    padding:18px 42px;
+
     border-radius:50px;
+
     font-size:20px;
+
     font-weight:bold;
+
+    margin:12px;
+
     transition:.3s;
+
     box-shadow:0 10px 25px rgba(0,0,0,.15);
+
 }
 
 .botao:hover,
 .botao2:hover,
 .botao3:hover{
+
     background:#a86c46;
+
     transform:translateY(-3px);
+
 }
 
-/* VÍDEO */
+/* ===========================
+   VÍDEO
+=========================== */
+
 .video{
-    padding:80px 25px;
+
+    padding:90px 20px;
+
+    background:#fff;
+
 }
 
 .video h2{
-    font-size:40px;
-    margin-bottom:35px;
+
+    font-size:42px;
+
     color:#7b4e43;
+
+    margin-bottom:40px;
+
 }
 
 .video-container{
+
     position:relative;
+
     width:100%;
-    max-width:800px;
+
+    max-width:900px;
+
     margin:0 auto;
+
     padding-bottom:56.25%;
+
     height:0;
+
     overflow:hidden;
+
     border-radius:20px;
+
     box-shadow:0 15px 35px rgba(0,0,0,.15);
+
 }
 
 .video-container iframe{
+
     position:absolute;
-    width:100%;
-    height:100%;
+
     left:0;
+
     top:0;
+
+    width:100%;
+
+    height:100%;
+
 }
 
-/* TEXTO */
 .texto{
-    padding:60px 20px;
-    font-size:22px;
+
+    font-size:23px;
+
     color:#555;
+
+    max-width:850px;
+
+    margin:40px auto;
+
+    line-height:1.8;
+
 }
 
-/* BENEFÍCIOS */
-.beneficios{
+/* ===========================
+   PROGRAMA
+=========================== */
+
+.programa{
+
     background:#fdf2ec;
-    padding:80px 30px;
+
+    padding:90px 20px;
+
 }
 
-.beneficios h2{
+.programa h2{
+
     font-size:42px;
+
     color:#7b4e43;
+
     margin-bottom:50px;
+
 }
 
 .cards{
+
     display:flex;
+
     justify-content:center;
-    gap:30px;
+
     flex-wrap:wrap;
+
+    gap:30px;
+
 }
 
 .card{
-    background:white;
-    width:300px;
-    padding:35px;
+
+    background:#fff;
+
+    width:250px;
+
+    padding:35px 25px;
+
     border-radius:18px;
+
     box-shadow:0 10px 30px rgba(0,0,0,.08);
+
     transition:.3s;
+
 }
 
 .card:hover{
-    transform:translateY(-10px);
+
+    transform:translateY(-8px);
+
 }
 
 .card h3{
+
     margin:20px 0;
+
     color:#7b4e43;
+
+    font-size:24px;
+
 }
 
-/* SOBRE */
+.card p{
+
+    font-size:18px;
+
+    color:#555;
+
+}
+/* ===========================
+   SOBRE
+=========================== */
+
 .sobre{
-    padding:90px 25px;
+
+    padding:90px 20px;
+
+    background:#ffffff;
+
 }
 
 .sobre h2{
+
     font-size:42px;
-    margin-bottom:30px;
+
     color:#7b4e43;
+
+    margin-bottom:35px;
+
 }
 
 .sobre p{
+
+    max-width:900px;
+
+    margin:20px auto;
+
     font-size:22px;
+
+    color:#555;
+
+    line-height:1.9;
+
 }
 
-/* CTA */
+/* ===========================
+   SLOGAN
+=========================== */
+
+.slogan{
+
+    background:#f8efe9;
+
+    padding:90px 20px;
+
+}
+
+.slogan h2{
+
+    font-size:42px;
+
+    color:#7b4e43;
+
+    margin:10px 0;
+
+    font-weight:bold;
+
+}
+
+.slogan p{
+
+    margin-top:35px;
+
+    font-size:28px;
+
+    letter-spacing:4px;
+
+    color:#c58b63;
+
+    font-weight:bold;
+
+}
+
+.linha{
+
+    width:120px;
+
+    height:3px;
+
+    background:#c58b63;
+
+    margin:25px auto;
+
+}
+
+/* ===========================
+   INTRODUÇÃO
+=========================== */
+
+.introducao{
+
+    padding:90px 20px;
+
+    background:#fffaf7;
+
+}
+
+.introducao h2{
+
+    font-size:42px;
+
+    color:#7b4e43;
+
+    margin-bottom:35px;
+
+}
+
+.introducao p{
+
+    max-width:900px;
+
+    margin:20px auto;
+
+    font-size:22px;
+
+    color:#555;
+
+    line-height:1.9;
+
+}
+
+/* ===========================
+   CTA
+=========================== */
+
 .cta{
+
     background:#7b4e43;
-    color:white;
-    padding:90px 25px;
+
+    color:#fff;
+
+    padding:90px 20px;
+
 }
 
 .cta h2{
+
     font-size:42px;
-    margin-bottom:35px;
+
+    margin-bottom:30px;
+
+    color:#fff;
+
+}
+
+.cta p{
+
+    max-width:800px;
+
+    margin:0 auto 40px;
+
+    font-size:22px;
+
 }
 
 .botao3{
-    background:#ffffff;
+
+    background:#fff;
+
     color:#7b4e43;
+
 }
 
 .botao3:hover{
+
     background:#f4e7dd;
+
 }
 
-/* FOOTER */
+/* ===========================
+   RODAPÉ
+=========================== */
+
 footer{
+
     background:#3f302c;
-    color:white;
+
+    color:#fff;
+
+    padding:35px 20px;
+
     text-align:center;
-    padding:25px;
+
 }
 
-/* RESPONSIVO */
+footer p{
+
+    margin:8px 0;
+
+}
+
+/* ===========================
+   RESPONSIVO
+=========================== */
+
 @media(max-width:768px){
 
+.logo{
+
+    width:260px;
+
+}
+
+.hero{
+
+    min-height:auto;
+
+    padding:80px 20px;
+
+}
+
 .hero h1{
+
     font-size:36px;
+
 }
 
 .subtitulo{
+
     font-size:20px;
+
 }
 
-.video h2{
-    font-size:30px;
-}
-
-.texto{
-    font-size:19px;
-}
-
-.sobre h2{
-    font-size:32px;
-}
-
-.sobre p{
-    font-size:19px;
-}
-
+.video h2,
+.programa h2,
+.sobre h2,
+.slogan h2,
+.introducao h2,
 .cta h2{
+
     font-size:30px;
+
+}
+
+.texto,
+.sobre p,
+.introducao p,
+.cta p{
+
+    font-size:19px;
+
+}
+
+.cards{
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.card{
+
+    width:100%;
+
+    max-width:340px;
+
 }
 
 .botao,
 .botao2,
 .botao3{
+
+    width:100%;
+
+    max-width:360px;
+
+    padding:16px 20px;
+
     font-size:18px;
-    padding:16px 28px;
+
+    margin:10px auto;
+
 }
 
-.logo{
-    width:260px;
-}
 }
