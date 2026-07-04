@@ -1,1 +1,93 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#fffaf7;
+    color:#4a3d39;
+    line-height:1.6;
+    overflow-x:hidden;
+}
+
+/* CONTAINER PADRÃO */
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:0 20px;
+    text-align:center;
+}
+
+/* HERO */
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:60px 20px;
+    background:linear-gradient(rgba(255,248,245,.92),rgba(255,248,245,.92)),
+    url('https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1600&q=80');
+    background-size:cover;
+    background-position:center;
+}
+
+.logo{
+    width:260px;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:42px;
+    color:#7b4e43;
+    margin-bottom:15px;
+}
+
+.subtitulo{
+    font-size:20px;
+    color:#6b5a55;
+    margin-bottom:25px;
+}
+
+/* BOTÕES */
+.botao,
+.botao2,
+.botao3{
+    display:inline-block;
+    background:#18c75a;
+    color:#fff;
+    padding:14px 32px;
+    margin:10px auto;
+    border-radius:50px;
+    text-decoration:none;
+    font-size:16px;
+    font-weight:bold;
+    box-shadow:0 8px 20px rgba(24,199,90,.25);
+    transition:.3s;
+}
+
+.botao:hover,
+.botao2:hover,
+.botao3:hover{
+    background:#0fa64a;
+    transform:translateY(-3px);
+}
+
+/* VIDEO */
+.video{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.video h2{
+    font-size:32px;
+    margin-bottom:20px;
+}
+
+.video-container{
+    position:relative;
+    padding-bottom:56.25%;
+    height:0;
+    overflow
