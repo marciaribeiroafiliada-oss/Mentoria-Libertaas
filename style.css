@@ -4,10 +4,6 @@
     box-sizing:border-box;
 }
 
-html{
-    scroll-behavior:smooth;
-}
-
 body{
     font-family:Arial, Helvetica, sans-serif;
     background:#fffaf7;
@@ -15,53 +11,39 @@ body{
     line-height:1.7;
 }
 
-/* HERO PRINCIPAL */
+/* HERO */
 .hero{
-    background:linear-gradient(rgba(255,248,245,.90),rgba(255,248,245,.90)),
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:60px 20px;
+    background:linear-gradient(rgba(255,248,245,.92),rgba(255,248,245,.92)),
     url('https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1600&q=80');
     background-size:cover;
     background-position:center;
-    min-height:100vh;
-
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-
-    text-align:center;
-
-    padding:70px 20px;
 }
 
-/* CONTEÚDO CENTRAL */
 .conteudo{
-    width:100%;
     max-width:1000px;
-    margin:auto;
-    text-align:center;
 }
 
-/* LOGO GRANDE E RESPONSIVA */
 .logo{
     width:260px;
-    max-width:90%;
-    height:auto;
-    display:block;
-    margin:0 auto 15px auto;
+    margin-bottom:20px;
 }
 
-/* TÍTULO */
 .hero h1{
-    font-size:52px;
+    font-size:48px;
     color:#7b4e43;
-    margin-bottom:25px;
+    margin-bottom:20px;
     line-height:1.2;
 }
 
-/* SUBTÍTULO */
 .subtitulo{
-    font-size:24px;
-    margin-bottom:40px;
+    font-size:22px;
+    margin-bottom:30px;
     color:#6b5a55;
 }
 
@@ -70,250 +52,21 @@ body{
 .botao2,
 .botao3{
     display:inline-block;
-    background:#18c75a;;
-    color:white;
-    padding:18px 45px;
-    text-decoration:none;
+    background:#18c75a;
+    color:#fff;
+    padding:16px 40px;
+    margin:10px;
     border-radius:50px;
-    font-size:20px;
+    text-decoration:none;
+    font-size:18px;
     font-weight:bold;
+    box-shadow:0 10px 25px rgba(24,199,90,.25);
     transition:.3s;
-    box-shadow:0 12px 30px rgba(24,199,90,.35);
 }
 
 .botao:hover,
 .botao2:hover,
 .botao3:hover{
-    background:#11a847;;
+    background:#11a847;
     transform:translateY(-3px);
 }
-
-/* VÍDEO */
-.video{
-    max-width:1000px;
-    margin:auto;
-    padding:80px 25px;
-    text-align:center;
-}
-
-.video h2{
-    font-size:40px;
-    margin-bottom:35px;
-    color:#7b4e43;
-}
-
-.video-container{
-    position:relative;
-    padding-bottom:56.25%;
-    height:0;
-    overflow:hidden;
-    border-radius:20px;
-    box-shadow:0 15px 35px rgba(0,0,0,.15);
-}
-
-.video-container iframe{
-    position:absolute;
-    width:100%;
-    height:100%;
-    left:0;
-    top:0;
-}
-
-/* TEXTO */
-.texto{
-    margin:40px auto;
-    max-width:850px;
-    font-size:22px;
-    color:#555;
-}
-
-/* BENEFÍCIOS */
-.beneficios{
-    background:#fdf2ec;
-    padding:80px 30px;
-    text-align:center;
-}
-
-.beneficios h2{
-    font-size:42px;
-    color:#7b4e43;
-    margin-bottom:50px;
-}
-
-.cards{
-    display:flex;
-    justify-content:center;
-    gap:30px;
-    flex-wrap:wrap;
-}
-
-.card{
-    background:white;
-    width:300px;
-    padding:35px;
-    border-radius:18px;
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
-    transition:.3s;
-}
-
-.card:hover{
-    transform:translateY(-10px);
-}
-
-.card h3{
-    margin:20px 0;
-    color:#7b4e43;
-}
-
-/* SOBRE */
-.sobre{
-    padding:90px 25px;
-    max-width:900px;
-    margin:auto;
-    text-align:center;
-}
-
-.sobre h2{
-    font-size:42px;
-    margin-bottom:30px;
-    color:#7b4e43;
-}
-
-.sobre p{
-    font-size:22px;
-}
-
-/* CTA FINAL */
-.cta{
-    background:#7b4e43;
-    color:white;
-    text-align:center;
-    padding:90px 25px;
-}
-
-.cta h2{
-    font-size:42px;
-    margin-bottom:35px;
-}
-
-.botao3{
-    background:#ffffff;
-    color:#7b4e43;
-}
-
-.botao3:hover{
-    background:#f4e7dd;
-}
-
-/* FOOTER */
-footer{
-    background:#3f302c;
-    color:white;
-    text-align:center;
-    padding:25px;
-}
-
-/* RESPONSIVO */
-@media(max-width:768px){
-
-.hero{
-    padding:30px 20px;
-}
-
-.hero h1{
-    font-size:36px;
-}
-
-.subtitulo{
-    font-size:20px;
-}
-
-.video h2{
-    font-size:30px;
-}
-
-.texto{
-    font-size:19px;
-}
-
-.sobre h2{
-    font-size:32px;
-}
-
-.sobre p{
-    font-size:19px;
-}
-
-.cta h2{
-    font-size:30px;
-}
-
-.botao,
-.botao2,
-.botao3{
-    font-size:18px;
-    padding:16px 28px;
-}
-    
-}
-/* ===========================
-   SLOGAN LIBERTAAS
-=========================== */
-
-.slogan{
-
-background:linear-gradient(180deg,#fffaf7,#fff3ec);
-
-padding:100px 30px;
-
-text-align:center;
-
-}
-
-.slogan h2{
-
-font-size:52px;
-
-font-family:Georgia, "Times New Roman", serif;
-
-font-weight:normal;
-
-color:#7b4e43;
-
-margin:18px 0;
-
-letter-spacing:1px;
-
-}
-
-.slogan p{
-
-margin-top:35px;
-
-font-size:24px;
-
-color:#b97d68;
-
-font-weight:bold;
-
-letter-spacing:3px;
-
-text-transform:uppercase;
-
-}
-
-.linha{
-
-width:120px;
-
-height:2px;
-
-background:#d6b19c;
-
-margin:25px auto;
-
-border-radius:10px;
-
-}
-
-
