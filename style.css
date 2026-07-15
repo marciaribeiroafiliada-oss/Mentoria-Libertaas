@@ -52,12 +52,11 @@ body{
 }
 
 .logo{
-    width:420px;
+    width:500px;
     max-width:90%;
     display:block;
-    margin:0 auto 30px;
+    margin:0 auto 25px;
 }
-
 .hero h1{
     font-size:52px;
     color:#7b4e43;
