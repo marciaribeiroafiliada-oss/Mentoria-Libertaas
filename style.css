@@ -561,3 +561,31 @@ margin-right:6px;
 vertical-align:middle;
 
 }
+/* TODOS OS BOTÕES DO SITE */
+
+a.botao,
+a.botao2,
+a.botao3,
+button{
+
+    background:#18C75A !important;
+
+    color:#ffffff !important;
+
+    border:none;
+
+    box-shadow:0 10px 30px rgba(24,199,90,.35);
+
+}
+
+
+a.botao:hover,
+a.botao2:hover,
+a.botao3:hover,
+button:hover{
+
+    background:#10A846 !important;
+
+    transform:translateY(-3px);
+
+}
