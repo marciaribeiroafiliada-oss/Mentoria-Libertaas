@@ -81,9 +81,9 @@ body{
 
     display:inline-block;
 
-    background:#c58b63;
+    background:#18C75A;
 
-    color:#fff;
+    color:#ffffff;
 
     text-decoration:none;
 
@@ -97,9 +97,9 @@ body{
 
     margin:12px;
 
-    transition:.3s;
+    transition:all .3s ease;
 
-    box-shadow:0 10px 25px rgba(0,0,0,.15);
+    box-shadow:0 10px 30px rgba(24,199,90,.35);
 
 }
 
@@ -107,12 +107,13 @@ body{
 .botao2:hover,
 .botao3:hover{
 
-    background:#a86c46;
+    background:#10A846;
 
     transform:translateY(-3px);
 
-}
+    box-shadow:0 14px 35px rgba(16,168,70,.45);
 
+}
 /* ===========================
    VÍDEO
 =========================== */
