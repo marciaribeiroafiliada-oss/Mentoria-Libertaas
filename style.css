@@ -547,5 +547,46 @@ footer p{
     margin:10px auto;
 
 }
+   /* AUTORIDADE */
+
+.autoridade{
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+gap:10px;
+
+margin:25px auto 35px;
+
+padding:12px 28px;
+
+background:#fffaf2;
+
+border:1px solid #e8d4a7;
+
+border-radius:50px;
+
+color:#7b4e43;
+
+font-size:18px;
+
+font-weight:600;
+
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.estrela{
+
+font-size:24px;
+
+color:#C9A227;
+
+text-shadow:0 1px 3px rgba(0,0,0,.15);
+
+}
 
 }
