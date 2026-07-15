@@ -33,35 +33,22 @@ body{
 /* ===========================
    HERO
 =========================== */
-
 .hero{
-    .hero{
 
     background:linear-gradient(180deg,#fffdfc 0%,#fff7f3 45%,#fef0ea 100%);
 
     min-height:100vh;
 
     display:flex;
-    flex-direction:column;
+
     justify-content:center;
+
     align-items:center;
 
     text-align:center;
 
     padding:70px 20px;
 
-}
-
-    background-size:cover;
-    background-position:center;
-
-    min-height:100vh;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    padding:60px 20px;
 }
 
 .logo{
