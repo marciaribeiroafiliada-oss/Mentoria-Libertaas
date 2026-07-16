@@ -538,17 +538,15 @@ footer p{
 
 .img-slogan{
 
-    width:170% !important;
+    width:120% !important;
 
     max-width:none !important;
 
-    position:relative;
+    margin-left:-10%;
 
-    left:50%;
+    margin-right:0;
 
-    transform:translateX(-50%);
-
-    margin:0 0 20px 0;
+    display:block;
 
 }   
    .slogan .logo{
