@@ -711,19 +711,6 @@ button:hover{
     color:#ffffff;
 
 }
-.img-slogan{
-
-    display:block;
-
-    width:100%;
-
-    max-width:none;
-
-    margin:0 auto 35px;
-
-    height:auto;
-
-}
 /* LISTA DE BENEFÍCIOS */
 
 .lista-beneficios{
@@ -762,5 +749,27 @@ button:hover{
     max-width:1400px;
 
     width:94%;
+
+}
+/* AJUSTE FINAL IMAGEM SLOGAN CELULAR */
+
+@media(max-width:768px){
+
+    .slogan{
+        overflow:hidden;
+    }
+
+    .slogan-container{
+        width:100%;
+        max-width:100%;
+        overflow:hidden;
+    }
+
+    .img-slogan{
+        width:110% !important;
+        max-width:none !important;
+        margin-left:-5% !important;
+        display:block;
+    }
 
 }
