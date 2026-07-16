@@ -679,3 +679,11 @@ button:hover{
     transform:translateY(-3px);
 
 }
+/* PREÇO NO FUNDO MARROM */
+
+.preco-marrom .vezes,
+.preco-marrom .moeda{
+
+    color:#ffffff;
+
+}
