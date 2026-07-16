@@ -590,7 +590,37 @@ footer p{
     font-size:18px;
     margin:10px auto;
 }
+/* PREÇO NO CELULAR */
 
+.preco-parcela{
+
+    align-items:center;
+
+}
+
+
+.vezes{
+
+    font-size:22px;
+
+}
+
+
+.moeda{
+
+    font-size:18px;
+    padding-bottom:8px;
+    margin-right:6px;
+
+}
+
+
+.valor{
+
+    font-size:62px !important;
+    letter-spacing:-2px;
+
+}
 }
 /* AUTORIDADE */
 
