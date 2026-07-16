@@ -765,11 +765,10 @@ button:hover{
         overflow:hidden;
     }
 
-    .img-slogan{
-        width:170% !important;
-        max-width:none !important;
-        margin-left:-5% !important;
-        display:block;
-    }
-
+.img-slogan{
+    width:150% !important;
+    max-width:none !important;
+    margin-left:-25% !important;
+    display:block;
+}
 }
