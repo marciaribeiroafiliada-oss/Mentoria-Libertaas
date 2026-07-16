@@ -720,12 +720,16 @@ button:hover{
 /* LISTA DE BENEFÍCIOS */
 
 .lista-beneficios{
-    list-style:none;
-    padding:0;
-    margin:30px auto;
-    max-width:600px;
-}
 
+    list-style:none;
+
+    padding:0;
+
+    margin:30px auto;
+
+    max-width:520px;
+
+}
 .lista-beneficios li{
     display:flex;
     align-items:flex-start;
@@ -738,8 +742,11 @@ button:hover{
     text-align:left;
 }
 .check{
-    color:#ffffff !important;
+
+    color:#FFFFFF !important;
+
     font-size:22px;
+
     font-weight:bold;
-    flex-shrink:0;
+
 }
