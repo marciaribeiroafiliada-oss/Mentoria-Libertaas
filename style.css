@@ -542,11 +542,15 @@ footer p{
 
     max-width:none !important;
 
-    margin-left:-35%;
+    position:relative;
 
-    margin-bottom:20px;
+    left:50%;
 
-}
+    transform:translateX(-50%);
+
+    margin:0 0 20px 0;
+
+}   
    .slogan .logo{
     width:180px !important;
     max-width:70%;
