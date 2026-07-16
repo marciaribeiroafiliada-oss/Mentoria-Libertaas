@@ -536,12 +536,12 @@ footer p{
     padding:45px 20px;
 }
 
-.slogan img:first-child{
-    width:100%;
-    max-width:95% !important;
-    margin:0 auto 20px auto;
+.img-slogan{
+    width:130% !important;
+    max-width:none !important;
+    margin-left:-15%;
+    margin-bottom:20px;
 }
-
 .slogan .logo{
     width:180px !important;
     max-width:70%;
