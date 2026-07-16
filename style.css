@@ -537,12 +537,17 @@ footer p{
 }
 
 .img-slogan{
-    width:130% !important;
+
+    width:170% !important;
+
     max-width:none !important;
-    margin-left:-15%;
+
+    margin-left:-35%;
+
     margin-bottom:20px;
+
 }
-.slogan .logo{
+   .slogan .logo{
     width:180px !important;
     max-width:70%;
     margin:0 auto;
