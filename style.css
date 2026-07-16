@@ -733,12 +733,12 @@ button:hover{
     gap:10px;
     margin:14px 0;
     font-size:22px;
-    color:#ffffff;
+    color:#ffffff !important;
     line-height:1.6;
     text-align:left;
 }
 .check{
-    color:#ffffff;
+    color:#ffffff !important;
     font-size:22px;
     font-weight:bold;
     flex-shrink:0;
