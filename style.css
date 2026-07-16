@@ -458,80 +458,86 @@ footer p{
 @media(max-width:768px){
 
 .logo{
-
     width:260px;
-
 }
 
+/* HERO */
+
 .hero{
-
     min-height:auto;
-
     padding:60px 20px;
-
 }
 
 .hero h1{
-
     font-size:36px;
-
 }
 
 .subtitulo{
-
     font-size:20px;
-
 }
+
+/* SLOGAN */
+
+.slogan{
+    padding:45px 20px;
+}
+
+.slogan img:first-child{
+    width:100%;
+    max-width:95% !important;
+    margin:0 auto 20px auto;
+}
+
+.slogan .logo{
+    width:180px !important;
+    max-width:70%;
+    margin:0 auto;
+}
+
+/* TÍTULOS */
 
 .video h2,
 .programa h2,
 .sobre h2,
-.slogan h2,
 .introducao h2,
 .cta h2{
-
     font-size:30px;
-
 }
+
+/* TEXTOS */
 
 .texto,
 .sobre p,
 .introducao p,
 .cta p{
-
     font-size:19px;
-
 }
 
+/* CARDS */
+
 .cards{
-
     flex-direction:column;
-
     align-items:center;
-
 }
 
 .card{
-
     width:100%;
-
     max-width:340px;
 }
+
+/* BOTÕES */
 
 .botao,
 .botao2,
 .botao3{
-
     width:100%;
     max-width:360px;
     padding:16px 20px;
     font-size:18px;
     margin:10px auto;
-
 }
 
-}   /* <-- ADICIONE ESTA CHAVE */
-
+}
 /* AUTORIDADE */
 
 .autoridade{
