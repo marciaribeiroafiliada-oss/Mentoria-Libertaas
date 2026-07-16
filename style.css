@@ -622,6 +622,23 @@ footer p{
 
 }
 }
+/* ===========================
+   IMAGEM DO SLOGAN
+=========================== */
+
+.img-slogan{
+
+    display:block;
+
+    width:100%;
+
+    max-width:1000px;
+
+    height:auto;
+
+    margin:0 auto 35px auto;
+
+}
 /* AUTORIDADE */
 
 .autoridade{
@@ -687,3 +704,17 @@ button:hover{
     color:#ffffff;
 
 }
+.img-slogan{
+
+    display:block;
+
+    width:100%;
+
+    max-width:1000px;
+
+    margin:0 auto 35px;
+
+    height:auto;
+
+}
+
